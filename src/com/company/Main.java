@@ -2,6 +2,7 @@ package com.company;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -41,7 +42,7 @@ public class Main {
                 list.add(lineFile.next());
             }
         }
-        System.out.println(list);
-    }
 
+        System.out.printf("There are %s words between your chosen words", Collections.binarySearch(list, word2) - Collections.binarySearch(list, word1));
+    }
 }
